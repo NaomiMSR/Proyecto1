@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea el título a la izquierda y el carrito a la derecha */
+    align-items: center; /* Centra verticalmente el contenido del header */
+    padding: 20px;
+    background-color: #4c5589;
+    color: white
+  }
+  
+  header h1 {
+    margin: 0; /* Elimina los márgenes predeterminados del título */
+  }
+  
+  .carrito {
+    font-size: 2em; /* Ajusta el tamaño del icono del carrito */
+  }
+  
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .tarjeta {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+  }
+  
+  .tarjeta img {
+    width: 150px; /* Ancho fijo para todas las imágenes */
+    height: 150px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-bottom: 10px;
+  }
+  
+  .contenido {
+    padding: 20px;
+  }
+  
+  .tarjeta h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-top: 10px;
+  }
+  
+  .corazon {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    font-size: 1.2em; /* Tamaño del icono */
+    cursor: pointer; /* Cursor al pasar por encima */
+  }
+
+ .corazon:hover{
+    color: #a52828;
+ }
+
+ .carrito:hover{
+    color: #626eaf;
+ }
