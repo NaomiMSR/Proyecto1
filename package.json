@@ -2,11 +2,10 @@
   "name": "proyecto1",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "start": "node app.js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,14 +13,18 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "firebase": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
     "mysql": "github:mysqljs/mysql",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
-    "react-router-dom": "^7.1.5"
+    "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
