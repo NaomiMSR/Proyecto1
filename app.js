@@ -20,14 +20,19 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Servir archivos estáticos del frontend (NUEVO)
+// Servir archivos estáticos del frontend
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Rutas API
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 
-// Ruta catch-all para SPA (NUEVO)
+// Ruta de health check (NUEVO - útil para Railway)
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'Server is running' });
+});
+
+// Ruta catch-all para SPA - debe ir DESPUÉS de las rutas API
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
@@ -36,6 +41,6 @@ app.get('*', (req, res) => {
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
