@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "start": "node app.js",
+    "seed": "node seedProducts.js",
     "preview": "vite preview",
     "railway-build": "npm run build && npm run build:server",
     "build:server": "echo 'Server build complete'"
