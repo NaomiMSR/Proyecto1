@@ -8,7 +8,7 @@
     "start": "node app.js",
     "seed": "node seedProducts.js",
     "preview": "vite preview",
-    "railway-build": "npm run build && npm run build:server",
+    "railway-build": "npm run build && npm run seed",
     "build:server": "echo 'Server build complete'"
   },
   "dependencies": {
