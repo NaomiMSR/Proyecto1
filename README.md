@@ -1,8 +1,22 @@
-# React + Vite
+Tienda de Ropa Online
+Una aplicación web de comercio electrónico especializada en venta de ropa en línea, desarrollada con tecnologías web modernas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características
+- Catálogo de productos de ropa
+- Sistema de autenticación de usuarios
+- Carrito de compras interactivo
+- Gestión de perfiles de usuario
+- Sistema de gestión de productos (admin)
 
-Currently, two official plugins are available:
+Tecnologías Utilizadas
+- Frontend: HTML5, CSS3, JavaScript
+- Base de datos: MongoDB
+- Autenticación: Sistema personalizado de auth
+- Estilos: CSS personalizado
+- Herramientas: Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades Principales
+- Registro y login de usuarios
+- Navegación por catálogo de productos
+- Agregar productos al carrito
+
